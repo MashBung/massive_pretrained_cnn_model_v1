@@ -107,4 +107,18 @@ class GPUTrainTransform(nn.Module):
 
 <img width="195" height="153" alt="image" src="https://github.com/user-attachments/assets/57301eb4-75e5-4dc0-ae17-d14796eaaf8a" />
 
+## CNN이 무엇을 학습하는지 유추
 
+<img width="195" height="153" alt="image" src="https://github.com/user-attachments/assets/57301eb4-75e5-4dc0-ae17-d14796eaaf8a" />
+
+예측 1
+
+<img width="388" height="392" alt="image" src="https://github.com/user-attachments/assets/4a8fe3d7-c47c-47e7-b8af-ee859fb17eba" />
+
+예측 2
+
+<img width="382" height="554" alt="image" src="https://github.com/user-attachments/assets/1234891c-91b1-493b-a4fe-1a83405adb21" />
+
+예측 3
+
+<img width="385" height="560" alt="image" src="https://github.com/user-attachments/assets/57c82287-5c0d-40d6-9ba2-1fdc2973b1fc" />
