@@ -27,16 +27,22 @@ Input 3×320×320
 **ResidualBlock**
 
 ```
-ResidualBlock(in_ch, out_ch, stride)
+ResidualBlock(in_ch, out_ch, stride=s)
 
-Input  in_ch @ H×W
- │
- ├─ Main    Conv3×3 s=stride p=1 bias=False  → BN → SiLU    out_ch @ H/s×W/s
- │          Conv3×3 s=1      p=1 bias=False  → BN           out_ch @ H/s×W/s
- │
- └─ Shortcut
-      stride≠1 or in_ch≠out_ch → Conv1×1 s=stride bias=False → BN   out_ch @ H/s×W/s
-      그 외                    → Identity                          in_ch  @ H×W
- │
- Add (Main + Shortcut) → SiLU                                out_ch @ H/s×W/s
+  Input                                 in_ch  @ H×W
+    │
+    ├──── Main ──────────────────────────────────────┐
+    │     Conv3×3  s=s  p=1  bias=False              │
+    │     BN → SiLU                     out_ch @ H/s │
+    │     Conv3×3  s=1  p=1  bias=False              │
+    │     BN                            out_ch @ H/s │
+    │                                                │
+    └──── Shortcut ───────────────────────────────┐  │
+          [s≠1 or in_ch≠out_ch]                   │  │
+            Conv1×1  s=s  bias=False → BN         │  │
+          [else]                                  │  │
+            Identity                 out_ch @ H/s │  │
+                                                  ▼  ▼
+                                              Add → SiLU
+                                              out_ch @ H/s×W/s
 ```
