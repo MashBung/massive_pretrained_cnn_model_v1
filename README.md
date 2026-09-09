@@ -100,3 +100,11 @@ class GPUTrainTransform(nn.Module):
 - 정확도(Accuracy)를 활용하여 훈련과 검증의 정확도를 측정하였습니다.
 - `test.py` — Top-1 / Top-5 정확도 및 **500개 클래스별 정확도**를 계산해 `log/per_class_acc.txt`에 저장 (가장 못 맞추는 클래스 순으로 정렬). 어떤 클래스가 혼동되는지 분석하는 데 사용합니다.
 - `image_test.py` — 단일 이미지 추론, Top-5 확률 출력합니다.
+
+## 학습 로그 발췌
+
+<img width="717" height="257" alt="image" src="https://github.com/user-attachments/assets/9db24a1f-121e-4659-a63c-45c907fcf72d" />
+
+<img width="195" height="153" alt="image" src="https://github.com/user-attachments/assets/57301eb4-75e5-4dc0-ae17-d14796eaaf8a" />
+
+
