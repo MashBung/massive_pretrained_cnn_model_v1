@@ -123,4 +123,11 @@ class GPUTrainTransform(nn.Module):
 
 <img width="385" height="560" alt="image" src="https://github.com/user-attachments/assets/57c82287-5c0d-40d6-9ba2-1fdc2973b1fc" />
 
-- 
+예측 4
+
+<img width="390" height="554" alt="image" src="https://github.com/user-attachments/assets/c117eeb4-99ef-4770-a55f-82bb0c376f42" />
+
+예측 5
+
+<img width="408" height="557" alt="image" src="https://github.com/user-attachments/assets/37879ded-7b69-41e2-8c71-570b0a0c3eaf" />
+
