@@ -131,3 +131,7 @@ class GPUTrainTransform(nn.Module):
 
 <img width="408" height="557" alt="image" src="https://github.com/user-attachments/assets/37879ded-7b69-41e2-8c71-570b0a0c3eaf" />
 
+- 모든 예측에서 말과 똑같은 4족 보행 동물입니다.
+- 높은 순위일수록 말과 비슷한 외형적 특징을 가집니다.
+- 순위가 낮아질수록 말과 비슷한 외형적 특징에서 멀어집니다.
+
