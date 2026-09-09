@@ -122,3 +122,5 @@ class GPUTrainTransform(nn.Module):
 예측 3
 
 <img width="385" height="560" alt="image" src="https://github.com/user-attachments/assets/57c82287-5c0d-40d6-9ba2-1fdc2973b1fc" />
+
+- 
