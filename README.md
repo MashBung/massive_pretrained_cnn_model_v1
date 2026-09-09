@@ -86,3 +86,17 @@ class GPUTrainTransform(nn.Module):
 | Loss | CrossEntropyLoss (weight=None, ignore_index=-100, reduction="mean", label_smoothing=0.1,) |
 | Precision | AMP (fp16 autocast + GradScaler) |
 | Batch size | 256 |
+
+## 핵심 결과
+
+| 항목 | 값 |
+|---|---|
+| 훈련 정확도 (Top-1) | 83.13% |
+| 검증 정확도 (Top-1) | 67.64% |
+| 클래스 수 | 500 |
+| 입력 해상도 | 320 × 320 |
+| 학습 환경 | RTX 5070 Ti |
+
+- 정확도(Accuracy)를 활용하여 훈련과 검증의 정확도를 측정하였습니다.
+- `test.py` — Top-1 / Top-5 정확도 및 **500개 클래스별 정확도**를 계산해 `log/per_class_acc.txt`에 저장 (가장 못 맞추는 클래스 순으로 정렬). 어떤 클래스가 혼동되는지 분석하는 데 사용합니다.
+- `image_test.py` — 단일 이미지 추론, Top-5 확률 출력합니다.
